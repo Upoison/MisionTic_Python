@@ -19,3 +19,10 @@ def resta(n1,n2):
     d = n2-n1
     return c,d
 print(resta(9,7))
+
+
+
+
+
+
+def CDT(usuario:str,capital:int,tiempo:int):
