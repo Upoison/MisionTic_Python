@@ -1,7 +1,9 @@
-import numpy as np 
+import numpy as np
 
 arreglo1 = np.array([1,5,8])
 print(arreglo1, type(arreglo1), arreglo1.shape, arreglo1[1])
 
 arreglo2 = np.array([[4,8,9],[8,8,8]])
 print(arreglo2, type(arreglo2), arreglo2.shape, arreglo2[0,2])
+
+Numpy settings needs to be verified
