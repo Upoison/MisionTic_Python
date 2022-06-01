@@ -20,4 +20,4 @@ rutinaContable = [
 
 ordenes(rutinaContable)
 
-armar la cadena de texto
+#armar la cadena de texto con for 
