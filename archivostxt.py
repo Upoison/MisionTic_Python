@@ -13,3 +13,13 @@ archivo1.close()
 archivo2 = open('archivo_prueba2.txt', 'w')
 archivo2.write('Este es un texto nuevo')
 archivo2.close()
+
+archivo2 = open('archivo_prueba2.txt', 'a')
+archivo2.write('Este es un texto nuevo')
+archivo2.close()
+
+lista = ['Marina', 'Oscar', 'Juan', 'Sofia', 'Laura']
+archivo3 = open('archivo_prueba3.txt', 'w', encoding='utf-8')
+for i in lista:
+    archivo3.write(i + '\n')
+archivo3.close()
