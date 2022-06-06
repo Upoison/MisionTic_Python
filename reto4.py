@@ -1,7 +1,7 @@
 def ordenes(rutinaContable):
     from functools import reduce
     
-    list(map(lambda x: [x[0]]reduce ListaTotales =+ list(map(lambda z: z[1]*z[2] ,x[1:])), rutinaContable))
+    list(map(lambda x: [x[0]] reduce ListaTotales =+ list(map(lambda z: z[1]*z[2] ,x[1:])), rutinaContable))
     ListaTotales = list(map(lambda x: [x[0]] + [reduce(lambda a,e:round(a+e, 2) , x[1:])], ListaTotales))
     print(ListaTotales)
 
