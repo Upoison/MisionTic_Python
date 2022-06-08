@@ -1,15 +1,17 @@
 def ordenes(rutinaContable):
     from functools import reduce
     
-    list(map(lambda x: [x[0]] reduce ListaTotales =+ list(map(lambda z: z[1]*z[2] ,x[1:])), rutinaContable))
-    ListaTotales = list(map(lambda x: [x[0]] + [reduce(lambda a,e:round(a+e, 2) , x[1:])], ListaTotales))
-    print(ListaTotales)
+    ordenMinima = 600000
+    ordenTotal = list(map(lambda x: [x[0]] + list(map(lambda y: y[1]*y[2], x[1:])), rutinaContable))
+    
+    ordenTotal = list(map(lambda x:[x[0]] + [reduce(lambda a,b: round(a+b,2), x[1:])], ordenTotal))
+    
+    ordenTotal = list(map(lambda x : x if x [1] >=  ordenMinima else (x[0], x[1]+25000), ordenTotal))
 
-    ListaTotales = list(map(lambda x: x if x[1]>=600000 else [x[0], x[1] + 25000], ListaTotales))
-
-    print(ListaTotales)
 
     print('----------------- Inicio Registro diario --------------------------')
+    for x in range(len(ordenTotal)):
+        print(f'la factura {ordenTotal[x][0]} tiene un total en pesos de {ordenTotal[x][1]:,.2f}')
     print('----------------- Fin Registro diario -----------------------------')
 
 rutinaContable = [
@@ -20,5 +22,3 @@ rutinaContable = [
 ]
 
 ordenes(rutinaContable)
-
-#armar la cadena de texto con for 
