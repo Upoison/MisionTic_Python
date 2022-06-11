@@ -30,7 +30,7 @@ persona2.mostrar()
 
 class Estudiante:
     def __init__(self):
-        self.name = input('Ingrese su nombre: \n')
+        self.nombre = input('Ingrese su nombre: \n')
         self.nota = float(input('Ingrese su nota: \n'))
     def imprimir(self):
         print("Nombre", self.nombre)
@@ -42,6 +42,6 @@ class Estudiante:
             print('Reprobado')
 
 a = Estudiante() #instanciar la clase 
-a.nota = 3.5# modificar el atributo
+a.nota = 3.5 # modificar el atributo
 a.imprimir()
 a.aprobar()
